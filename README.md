@@ -310,7 +310,6 @@ Dropout 是一种防止过拟合的正则化方法，在训练过程中以一定
 
 
 
-![acc_comparison_top3](D:\AAAAA\works-20250510T134512Z-1-001\works\figures1\acc_comparison_top3.png)
 
 
 
@@ -322,7 +321,6 @@ Dropout 是一种防止过拟合的正则化方法，在训练过程中以一定
 
 
 
-![train_time_comparison](.\figures1\train_time_comparison.png)
 
 
 
@@ -332,7 +330,7 @@ Dropout 是一种防止过拟合的正则化方法，在训练过程中以一定
 
 
 
-![params_comparison](.\figures2\params_comparison.png)
+
 
 
 
@@ -344,7 +342,7 @@ Dropout 是一种防止过拟合的正则化方法，在训练过程中以一定
 
 
 
-![flops_comparison](.\figures2\flops_comparison.png)
+
 
 
 
@@ -356,7 +354,6 @@ Dropout 是一种防止过拟合的正则化方法，在训练过程中以一定
 
 
 
-![training_time_vs_acc](D:\AAAAA\works-20250510T134512Z-1-001\works\figures\metrics\training_time_vs_acc.png)
 
 
 
@@ -373,7 +370,7 @@ Dropout 是一种防止过拟合的正则化方法，在训练过程中以一定
 | ResNet_v2_No_BN         | 90.24   | 69.23      | 11.169M | 203.102M | Acc ↓1.51 |
 | ResNet_v2_No_BN_AvgPool | 89.97   | 68.94      | 11.169M | 203.121M | Acc ↓1.78 |
 
-![bn](D:\AAAAA\works-20250510T134512Z-1-001\works\results_v2\train_logs\bn.png)
+
 
 
 
@@ -382,8 +379,6 @@ Dropout 是一种防止过拟合的正则化方法，在训练过程中以一定
 
 
 
-![Best Test Acc (%)_horizontal_bar](D:\AAAAA\works-20250510T134512Z-1-001\works\results_v2\BatchNorm Removal\Best Test Acc (%)_horizontal_bar.png)
-
 
 
 - **训练时间（Time）**
@@ -391,7 +386,6 @@ Dropout 是一种防止过拟合的正则化方法，在训练过程中以一定
 
 
 
-![Training Time (min)_dot_plot](D:\AAAAA\works-20250510T134512Z-1-001\works\results_v2\BatchNorm Removal\Training Time (min)_dot_plot.png)
 
 
 
@@ -401,7 +395,6 @@ Dropout 是一种防止过拟合的正则化方法，在训练过程中以一定
   
   
 
-![FLOPs_vertical_bar](D:\AAAAA\works-20250510T134512Z-1-001\works\results_v2\BatchNorm Removal\FLOPs_vertical_bar.png)
 
 
 
@@ -420,7 +413,6 @@ Dropout 是一种防止过拟合的正则化方法，在训练过程中以一定
 | VGG_v2_Baseline    | 92.67   | 78.76      | 33.647M | 333.219M | 无 Dropout       |
 | VGG_v2_Dropout     | 92.68   | 78.70      | 33.647M | 333.219M | 变化几乎无       |
 
-![do](D:\AAAAA\works-20250510T134512Z-1-001\works\results_v2\train_logs\do.png)
 
 
 
@@ -430,7 +422,6 @@ Dropout 是一种防止过拟合的正则化方法，在训练过程中以一定
 
 
 
-![Best Test Acc (%)_horizontal_bar](D:\AAAAA\works-20250510T134512Z-1-001\works\results_v2\Dropout Addition\Best Test Acc (%)_horizontal_bar.png)
 
 
 
@@ -440,7 +431,6 @@ Dropout 是一种防止过拟合的正则化方法，在训练过程中以一定
 
 
 
-![image-20250515164343260](C:\Users\mo\AppData\Roaming\Typora\typora-user-images\image-20250515164343260.png)
 
 
 
@@ -448,7 +438,7 @@ Dropout 是一种防止过拟合的正则化方法，在训练过程中以一定
 
   Dropout**不影响FLOPs**
 
-![FLOPs_horizontal_bar](D:\AAAAA\works-20250510T134512Z-1-001\works\results_v2/Dropout Addition\FLOPs_horizontal_bar.png)
+
 
 
 
@@ -464,7 +454,7 @@ Dropout 是一种防止过拟合的正则化方法，在训练过程中以一定
 |        | LeakyReLU | 91.36   | 53.8       | 10.442M | 235.255M | Acc ↑0.09，时间略增 |
 |        | ELU       | 89.57   | 53.02      | 10.442M | 235.255M | Acc ↓1.7            |
 
-![CNN](D:\AAAAA\works-20250510T134512Z-1-001\works\results_v2\train_logs\CNN.png)
+
 
 
 
@@ -474,7 +464,6 @@ Dropout 是一种防止过拟合的正则化方法，在训练过程中以一定
 |           | LeakyReLU | 91.8    | 71.89      | 11.172M | 204.569M | Acc 几乎相同，复杂度大增 |
 |           | ELU       | 89.96   | 71.43      | 11.172M | 204.569M | Acc ↓1.85，训练慢        |
 
-![ResNet](D:\AAAAA\works-20250510T134512Z-1-001\works\results_v2\train_logs\ResNet.png)
 
 
 
@@ -484,7 +473,6 @@ Dropout 是一种防止过拟合的正则化方法，在训练过程中以一定
 |        | LeakyReLU | 92.88   | 78.43      | 33.647M | 333.219M | Acc ↑0.21 |
 |        | ELU       | 91.32   | 78.16      | 33.647M | 333.219M | Acc ↓1.35 |
 
-![VGG](D:\AAAAA\works-20250510T134512Z-1-001\works\results_v2\train_logs\VGG.png)
 
 
 
@@ -493,7 +481,7 @@ Dropout 是一种防止过拟合的正则化方法，在训练过程中以一定
 
 
 
-![Best Test Acc (%)_dot_plot](D:\AAAAA\works-20250510T134512Z-1-001\works\results_v2\Activation Function Comparison\Best Test Acc (%)_dot_plot.png)
+
 
 
 
@@ -502,7 +490,6 @@ Dropout 是一种防止过拟合的正则化方法，在训练过程中以一定
 
 
 
-![Training Time (min)_vertical_bar](D:\AAAAA\works-20250510T134512Z-1-001\works\results_v2\Activation Function Comparison\Training Time (min)_vertical_bar.png)
 
 
 
@@ -511,7 +498,6 @@ Dropout 是一种防止过拟合的正则化方法，在训练过程中以一定
 
 
 
-![FLOPs_horizontal_bar](D:\AAAAA\works-20250510T134512Z-1-001\works\results_v2\Activation Function Comparison\FLOPs_horizontal_bar.png)
 
 
 
@@ -526,7 +512,7 @@ Dropout 是一种防止过拟合的正则化方法，在训练过程中以一定
 | ResNet_v2_Baseline | 91.75   | 76.55      | 11.172M | 204.569M | 有残差连接                       |
 | ResNet_v2_No_Res   | 91.63   | 83.13      | 11.000M | 203.782M | Acc ↓0.12，Params，FLOPs略有下降 |
 
-![res](D:\AAAAA\works-20250510T134512Z-1-001\works\results_v2\train_logs\res.png)
+
 
 
 
@@ -535,15 +521,13 @@ Dropout 是一种防止过拟合的正则化方法，在训练过程中以一定
 
 
 
-![Best Test Acc (%)_dot_plot](D:\AAAAA\works-20250510T134512Z-1-001\works\results_v2\Residual Connection Removal\Best Test Acc (%)_dot_plot.png)
+
 
 
 
 - **训练时间（Time）**
 
   训练时间**增长8.6%** 。
-
-![Training Time (min)_horizontal_bar](D:\AAAAA\works-20250510T134512Z-1-001\works\results_v2\Residual Connection Removal\Training Time (min)_horizontal_bar.png)
 
 
 
@@ -552,7 +536,7 @@ Dropout 是一种防止过拟合的正则化方法，在训练过程中以一定
 
 
 
-![FLOPs_vertical_bar](D:\AAAAA\works-20250510T134512Z-1-001\works\results_v2\Residual Connection Removal\FLOPs_vertical_bar.png)
+
 
 
 
@@ -568,7 +552,7 @@ Dropout 是一种防止过拟合的正则化方法，在训练过程中以一定
 | CNN_v2_AvgPool   | 90.61   | 65.11      | 10.442M | 235.316M | AvgPool，Acc ↓0.66，时间↑       |
 | CNN_v2_NoPooling | 88.27   | 382.54     | 10.442M | 6.358G   | 无Pooling，Acc ↓3%，计算量↑26倍 |
 
-![cnnpool](D:\AAAAA\works-20250510T134512Z-1-001\works\results_v2\train_logs\cnnpool.png)
+
 
 
 
@@ -578,7 +562,7 @@ Dropout 是一种防止过拟合的正则化方法，在训练过程中以一定
 | ResNet_v2_AvgPool  | 92.51   | 71.94      | 11.172M | 204.587M | AvgPool 反而表现更优           |
 | ResNet_v2_No_Pool  | 94.12   | 99.71      | 11.172M | 557.660M | 无Pool，但训练慢、计算成本极高 |
 
-![resnetpool](D:\AAAAA\works-20250510T134512Z-1-001\works\results_v2\train_logs\resnetpool.png)
+
 
 
 
@@ -587,7 +571,7 @@ Dropout 是一种防止过拟合的正则化方法，在训练过程中以一定
 
 
 
-![Best Test Acc (%)_horizontal_bar](D:\AAAAA\works-20250510T134512Z-1-001\works\results_v2\Pooling Strategy Comparison\Best Test Acc (%)_horizontal_bar.png)
+
 
 
 
@@ -596,7 +580,6 @@ Dropout 是一种防止过拟合的正则化方法，在训练过程中以一定
 
 
 
-![Training Time (min)_vertical_bar](D:\AAAAA\works-20250510T134512Z-1-001\works\results_v2\Pooling Strategy Comparison\Training Time (min)_vertical_bar.png)
 
 
 
@@ -605,7 +588,7 @@ Dropout 是一种防止过拟合的正则化方法，在训练过程中以一定
 
 
 
-![FLOPs_vertical_bar](D:\AAAAA\works-20250510T134512Z-1-001\works\results_v2\Pooling Strategy Comparison\FLOPs_vertical_bar.png)
+
 
 在**池化策略**的对比中，发现**不同架构对池化方式的依赖程度大不相同**。在**CNN_v2**模型中，默认的最大池化效果最佳（91.27%），使用平均池化准确率略降0.66%，完全取消池化（即不下采样）则使准确率暴跌至88.27%（下降3%），同时训练时间激增651%，FLOPs激增26倍。这说明浅层CNN缺乏其他下采样机制时，必须依赖池化层来控制特征图尺寸和计算量，否则特征图尺寸迅速膨胀使得计算变得难以承受。相比之下，**ResNet_v2**通过在卷积层中使用步幅为2的卷积实现下采样，其隐式池化能力更强：换用平均池化后准确率反而略升至92.51%，而完全去除池化时准确率达到全局最高94.12%。这表明在残差结构中可以利用学得的卷积核自行完成信息压缩，从而提升精度。然而，ResNet_v2无池化版本的训练时间仍增加了30%，FLOPs增长2.7倍，说明即使其瓶颈结构控制了一定计算量，特征图尺寸扩大也对计算资源有较大影响。**综上，池化策略与网络结构相互作用显著：在浅层CNN中必须使用适当的池化方式来保持效率，而在深层ResNet中可以灵活选择以换取更高精度。**
 
@@ -663,19 +646,18 @@ VGG_v2 系列在准确率上略胜一筹，最佳模型达到92.88%，但其参�
 
 对于 **CNN_v2** 架构，CNN_v2_Leaky_AvgPool_Dropout 配置在保留BN的前提下引入Dropout和LeakyReLU，测试准确率为90.48%，相比基线模型（91.27%）略有下降，但训练时间显著延长。进一步地，CNN_v2_NoBN_ELU_Dropout 在去除BN的同时采用ELU和Dropout，准确率仅为89.21%，验证了**BN缺失对浅层网络影响严重**。此外，ELU与Dropout的组合加重了训练不稳定性，导致模型在有限轮数内难以收敛至理想精度。
 
-![cnnf](D:\AAAAA\works-20250510T134512Z-1-001\works\results_v2\train_logs\cnnf.png)
+
 
 
 
 在 **ResNet_v2** 架构中，多组件融合表现相对稳定。ResNet_v2_Leaky_AvgPool_Dropout 模型的准确率达到91.79%，基本与基线持平（91.75%），显示出ResNet的鲁棒性。相比之下，ResNet_v2_NoBN_ELU_Dropout 准确率下降至90.45%，进一步验证BN对于深层网络依然重要，而ELU在ResNet中存在训练效率和梯度传播上的隐患。
 
-![resnetf](D:\AAAAA\works-20250510T134512Z-1-001\works\results_v2\train_logs\resnetf.png)
 
 
 
 在**VGG_v2** 表现最为突出的是 VGG_v2_Leaky_AvgPool_Dropout，其融合LeakyReLU、平均池化及双Dropout，测试准确率达**92.97%**，为本轮实验中所有融合模型之最。表明VGG结构在模块融合下依然具备提升空间。相对而言，VGG_v2_ELU_Dropout 尽管结构复杂，准确率也仅为90.84%，进一步说明 ELU 并不适用于所有架构，尤其在计算复杂度较高的网络中并无优势。
 
-![vggf](D:\AAAAA\works-20250510T134512Z-1-001\works\results_v2\train_logs\vggf.png)
+
 
 
 
