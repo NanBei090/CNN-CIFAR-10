@@ -1,0 +1,9 @@
+Model,Params,FLOPs
+CNN_v2_Leaky_AvgPool_Dropout,10.442M,235.316M
+CNN_v2_NoBN_ELU_Dropout,10.438M,234.272M
+ResNet_v2_Leaky_AvgPool_Dropout,11.172M,204.587M
+ResNet_v2_NoBN_ELU_Dropout,11.169M,203.102M
+VGG_v2_Leaky_AvgPool_Dropout,33.647M,333.250M
+VGG_v2_ELU_Dropout,33.647M,333.219M
+VGG_v2_ELU_Dropout,33.647M,333.219M
+VGG_v2_ELU_Dropout,33.647M,333.219M

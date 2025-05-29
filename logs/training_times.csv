@@ -1,0 +1,13 @@
+Model,Training Time (s)
+CNN_Baseline,2119.96
+CNN_No_BN,2096.92
+CNN_AvgPool,2153.43
+CNN_No_BN_Avg,2150.57
+ResNet_Baseline,2410.71
+ResNet_No_Res,2387.16
+ResNet_No_BN,2389.44
+ResNet_No_BN_No_Res,2379.57
+VGG_Baseline,2403.14
+VGG_No_BN,2521.57
+VGG_AvgPool,2535.42
+VGG_NoPooling,4946.85

@@ -1,0 +1,23 @@
+Model,Training Time (min)
+CNN_v2_Baseline,50.92
+CNN_v2_Dropout,54.18
+CNN_v2_No_BN,52.92
+CNN_v2_AvgPool,65.11
+CNN_v2_No_BN_Avg,64.71
+CNN_v2_NoPooling,382.54
+CNN_v2_LeakyReLU,53.8
+CNN_v2_ELU,53.02
+ResNet_v2_Dropout,66.83
+ResNet_v2_No_Res,83.13
+ResNet_v2_No_BN,69.23
+ResNet_v2_AvgPool,71.94
+ResNet_v2_No_BN_AvgPool,68.94
+ResNet_v2_No_Pool,99.71
+ResNet_v2_LeakyReLU,71.89
+ResNet_v2_ELU,71.43
+VGG_v2_Baseline,78.76
+VGG_v2_Dropout,78.7
+VGG_v2_LeakyReLU,78.43
+VGG_v2_ELU,78.16
+VGG_v2_AvgPool,100.02
+ResNet_v2_Baseline,76.55

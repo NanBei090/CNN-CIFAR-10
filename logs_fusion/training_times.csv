@@ -1,0 +1,7 @@
+Model,Training Time (min)
+CNN_v2_Leaky_AvgPool_Dropout,66.33
+CNN_v2_NoBN_ELU_Dropout,66.85
+ResNet_v2_Leaky_AvgPool_Dropout,76.64
+ResNet_v2_NoBN_ELU_Dropout,70.66
+VGG_v2_Leaky_AvgPool_Dropout,86.72
+VGG_v2_ELU_Dropout,86.15
