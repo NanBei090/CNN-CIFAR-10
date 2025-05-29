@@ -1,0 +1,92 @@
+\documentclass[border=15pt, multi, tikz]{standalone}
+\usepackage{import}
+\subimport{../layers/}{init} % 你这句保留，如果没用可以删
+\usetikzlibrary{positioning}
+
+\def\ConvColor{rgb:yellow,5;red,2.5;white,5}
+\def\ConvReluColor{rgb:yellow,5;red,5;white,5}
+\def\PoolColor{rgb:red,1;black,0.3}
+\def\FcColor{rgb:blue,5;red,2.5;white,5}
+\def\FcReluColor{rgb:blue,5;red,5;white,4}
+\def\SoftmaxColor{rgb:magenta,5;black,7}
+
+% 定义连接箭头样式，改成用TikZ自带箭头保证显示
+\tikzstyle{connection}=[ultra thick, ->, >=Stealth, draw=black, opacity=0.7,
+    every node/.style={sloped,allow upside down}]
+
+\begin{document}
+\begin{tikzpicture}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 输入层
+\pic[shift={(0,0,0)}] at (0,0,0) {Box={name=input,caption=Input,
+        xlabel={{"3",""}},ylabel=32,zlabel=32,fill=white,
+        height=32,width=1,depth=32}};
+
+% conv1 64 channels
+\pic[shift={(1,0,0)}] at (input-east) {RightBandedBox={name=conv1,caption=conv1,
+        xlabel={{"64",""}},ylabel=32,zlabel=32,fill=\ConvColor,bandfill=\ConvReluColor,
+        height=32,width=2,depth=32}};
+
+% layer1 (2 blocks, channels 64)
+\pic[shift={(2.2,0,0)}] at (conv1-east) {RightBandedBox={name=layer1,caption=layer1,
+        xlabel={{"64",""}},ylabel=32,zlabel=32,fill=\ConvColor,bandfill=\ConvReluColor,
+        height=28,width=3,depth=28}};
+
+% pool1 (downsample)
+\pic[shift={(1.5,0,0)}] at (layer1-east) {Box={name=pool1,
+        fill=\PoolColor,opacity=0.5,height=28,width=1,depth=28}};
+
+% layer2 (2 blocks, channels 128, spatial downsampled)
+\pic[shift={(2,0,0)}] at (pool1-east) {RightBandedBox={name=layer2,caption=layer2,
+        xlabel={{"128",""}},ylabel=16,zlabel=16,fill=\ConvColor,bandfill=\ConvReluColor,
+        height=16,width=3,depth=16}};
+
+% pool2
+\pic[shift={(1.5,0,0)}] at (layer2-east) {Box={name=pool2,
+        fill=\PoolColor,opacity=0.5,height=16,width=1,depth=16}};
+
+% layer3 (2 blocks, channels 256)
+\pic[shift={(2,0,0)}] at (pool2-east) {RightBandedBox={name=layer3,caption=layer3,
+        xlabel={{"256",""}},ylabel=8,zlabel=8,fill=\ConvColor,bandfill=\ConvReluColor,
+        height=8,width=4,depth=8}};
+
+% pool3
+\pic[shift={(1.5,0,0)}] at (layer3-east) {Box={name=pool3,
+        fill=\PoolColor,opacity=0.5,height=8,width=1,depth=8}};
+
+% layer4 (2 blocks, channels 512)
+\pic[shift={(2,0,0)}] at (pool3-east) {RightBandedBox={name=layer4,caption=layer4,
+        xlabel={{"512",""}},ylabel=4,zlabel=4,fill=\ConvColor,bandfill=\ConvReluColor,
+        height=4,width=5,depth=4}};
+
+% avgpool
+\pic[shift={(1.5,0,0)}] at (layer4-east) {Box={name=avgpool,
+        caption=AvgPool,fill=\PoolColor,opacity=0.5,height=4,width=1,depth=4}};
+
+% fc_dropout
+\pic[shift={(1.5,0,0)}] at (avgpool-east) {Box={name=fc_dropout,
+        caption=Dropout,fill=\PoolColor,opacity=0.5,height=2,width=1,depth=2}};
+
+% fc (fully connected layer)
+\pic[shift={(1.5,0,0)}] at (fc_dropout-east) {RightBandedBox={name=fc,caption=FC,
+        xlabel={{"10",""}},ylabel=1,zlabel=1,fill=\FcColor,bandfill=\FcReluColor,
+        height=2,width=2,depth=2}};
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 画箭头连接
+\draw [connection]  (input-east) -- (conv1-west);
+\draw [connection]  (conv1-east) -- (layer1-west);
+\draw [connection]  (layer1-east) -- (pool1-west);
+\draw [connection]  (pool1-east) -- (layer2-west);
+\draw [connection]  (layer2-east) -- (pool2-west);
+\draw [connection]  (pool2-east) -- (layer3-west);
+\draw [connection]  (layer3-east) -- (pool3-west);
+\draw [connection]  (pool3-east) -- (layer4-west);
+\draw [connection]  (layer4-east) -- (avgpool-west);
+\draw [connection]  (avgpool-east) -- (fc_dropout-west);
+\draw [connection]  (fc_dropout-east) -- (fc-west);
+\draw [connection]  (fc-east) -- ++(1.5,0,0);
+
+\end{tikzpicture}
+\end{document}
