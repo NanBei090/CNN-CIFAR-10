@@ -322,7 +322,7 @@ Dropout 是一种防止过拟合的正则化方法，在训练过程中以一定
 
 
 
-![train_time_comparison](D:\AAAAA\works-20250510T134512Z-1-001\works\figures1\train_time_comparison.png)
+![train_time_comparison](.\figures1\train_time_comparison.png)
 
 
 
@@ -332,7 +332,7 @@ Dropout 是一种防止过拟合的正则化方法，在训练过程中以一定
 
 
 
-![params_comparison](D:\AAAAA\works-20250510T134512Z-1-001\works\figures2\params_comparison.png)
+![params_comparison](.\figures2\params_comparison.png)
 
 
 
@@ -344,7 +344,7 @@ Dropout 是一种防止过拟合的正则化方法，在训练过程中以一定
 
 
 
-![flops_comparison](D:\AAAAA\works-20250510T134512Z-1-001\works\figures2\flops_comparison.png)
+![flops_comparison](.\figures2\flops_comparison.png)
 
 
 
